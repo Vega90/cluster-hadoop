@@ -38,7 +38,7 @@ Versiones del clúster:
    172.19.0.5  datanode2
    ```
 7. URL de interés
-   *   Iniciar Jupyter Notebooks: [http://namenode:8888/tree](http://namenode:8888/tree)
+   *   Iniciar Jupyter Notebook: [http://namenode:8888/tree](http://namenode:8888/tree)
    *   Interfaz Hadoop Namenode: [http://namenode:9870/](http://namenode:9870/)
    *   Job History MapReduce: [http://yarnmanager:19888/jobhistory](http://yarnmanager:19888/jobhistory)
    *   Yarn Manager: [http://yarnmanager:8088/cluster](http://yarnmanager:8088/cluster)
