@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  namenode:
+    image: vega90/hadoop-namenode:1.2
+    container_name: namenode
+    hostname: namenode
+    command: bash -c /etc/start.sh
+    networks:
+      - hadoop          
+    ports:
+      - 8020:8020 # namenode
+      - 9870:9870 # hadoop
+      - 8888:8888 # jupyter
+      - 10000:10000 # hive
+      - 10002:10002 # hive2
+      - 41414:41414 # avro
+    volumes:
+        - LOCAL_PATH:/media/notebooks
+    tty: true
+    stdin_open: true
+  
+  yarnmaster:
+    image: vega90/hadoop-yarn:1.1
+    container_name: yarnmaster
+    hostname: yarnmaster
+    networks:
+      - hadoop    
+    ports:
+      - 8032:8032
+
+    
+  datanode1:
+    image: vega90/hadoop-datanode:1.1
+    container_name: datanode1
+    hostname: datanode1
+    networks:
+      - hadoop    
+    ports:
+      - 50020:50020 
+      - 50075:50075
+      - 8042:8042
+    
+  datanode2:
+    image: vega90/hadoop-datanode:1.1
+    container_name: datanode2
+    hostname: datanode2
+    networks:
+      - hadoop
+ 
+networks:
+    hadoop:
