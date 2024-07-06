@@ -2,11 +2,15 @@
 
 En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran copiando la configuración de **datanode2** y renombrando con *datanode3, datanode4*...
 
+Versiones del clúster:
+
 *   Ubuntu 22.04
 *   Hadoop 3.4.0
 *   Hive 4.0.0
 *   Flume 1.11.0
 *   Jupyter Notebook 7.2.1
+
+### **INSTRUCCIONES**
 
 1. Iniciar con docker compose:
    ```
@@ -21,7 +25,11 @@ En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran c
    docker network inspect entorno_hadoop
    ```
    
-5. Modificar el fichero hosts. En linux se encuentra en /etc/hosts. Mapear las IP con cada contenedor:
+5. Modificar el fichero hosts.
+   
+   Dependiendo del SO el fichero se encontrará en distintas ubicaciones. Por ejemplo, en linux se encuentra en */etc/hosts*.
+
+   Mapear las IP de cada contenedor identificadas en el paso anterior. Se muestra un ejemplo a continuación:
 
    ```
    172.19.0.2  yarnmanager
