@@ -16,7 +16,7 @@ services:
       - 10002:10002 # hive2
       - 41414:41414 # avro
     volumes:
-        - /home/curso-big-data/notebooks:/media/notebooks
+        - LOCAL_PATH:/media/notebooks
     tty: true
     stdin_open: true
   
