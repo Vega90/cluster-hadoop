@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 # Instalar Jupyter Notebook utilizando pip
 RUN pip3 install --no-cache-dir jupyter
-RUN pip3 install --no-cache-dir pandas
+RUN pip3 install pandas
 
 # Exponer el puerto de Jupyter Notebook
 EXPOSE 8888
