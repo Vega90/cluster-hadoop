@@ -27,5 +27,10 @@ For example, jdbc:postgresql://myhost/db?ssl=true for postgres database.</descri
       <value>org.datanucleus.api.jdo.JDOPersistenceManagerFactory</value>
       <description>class implementing the jdo persistence</description>
    </property>
+   <property>
+    <name>hive.auto.convert.join</name>
+    <value>false</value>
+    <description>Disable automatic conversion of common joins to map joins.</description>
+   </property>
 </configuration>
 
