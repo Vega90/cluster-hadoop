@@ -13,7 +13,7 @@ services:
       - 9870:9870 # hadoop
       - 8888:8888 # jupyter
       - 10000:10000 # hive
-      - 10002:10002 # HiveServer2
+      - 10002:10002 # hiveServer2
       - 41414:41414 # avro
     volumes:
         - LOCAL_PATH:/media/notebooks
