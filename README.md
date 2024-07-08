@@ -12,7 +12,7 @@ Versiones del clúster:
 
 ### **INSTRUCCIONES**
 
-1. Iniciar con docker compose:
+1. Navegar a la carpeta donde se encuentre el fichero docker compose y ejecutar:
    ```
    docker-compose up -d
    ```
