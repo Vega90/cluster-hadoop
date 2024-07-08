@@ -1,6 +1,6 @@
 # Cluster de Hadoop con Docker
 
-En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran copiando la configuración de **datanode2** y renombrando con *datanode3, datanode4*...
+En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran copiando la configuración de **datanode2**. Ahora mismo hay cuatro nodos en el fichero docker-compose.yaml. Puedes añadir o eliminar nodos dejando siempre al menos uno.
 
 Versiones del clúster:
 
@@ -16,29 +16,9 @@ Versiones del clúster:
    ```
    docker-compose up -d
    ```
-3. Inspeccionar la red
-   ```
-   docker network ls
-   ```
-   Localizar la red creada *_hadoop: si se llama entorno_hadoop por ejemplo:
-   ```
-   docker network inspect entorno_hadoop
-   ```
    
-5. Modificar el fichero hosts.
-   
-   Dependiendo del SO el fichero se encontrará en distintas ubicaciones. Por ejemplo, en linux se encuentra en */etc/hosts*.
-
-   Mapear las IP de cada contenedor identificadas en el paso anterior. Se muestra un ejemplo a continuación:
-
-   ```
-   172.19.0.2  yarnmanager
-   172.19.0.3  namenode
-   172.19.0.4  datanode1
-   172.19.0.5  datanode2
-   ```
-7. URL de interés
-   *   Iniciar Jupyter Notebook: [http://namenode:8888/tree](http://namenode:8888/tree)
-   *   Interfaz Hadoop Namenode: [http://namenode:9870/](http://namenode:9870/)
-   *   Job History MapReduce: [http://yarnmanager:19888/jobhistory](http://yarnmanager:19888/jobhistory)
-   *   Yarn Manager: [http://yarnmanager:8088/cluster](http://yarnmanager:8088/cluster)
+2. URL de interés
+   *   Iniciar Jupyter Notebook: [http://localhost:8888/tree](http://localhost:8888/tree)
+   *   Interfaz Hadoop Namenode: [http://localhost:9870/](http://localhost:9870/)
+   *   Job History MapReduce: [http://localhost:19888/jobhistory](http://localhost:19888/jobhistory)
+   *   Yarn Manager: [http://localhost:8088/cluster](http://localhost:8088/cluster)
