@@ -12,7 +12,7 @@ RUN apt-get install -y iputils-ping
 RUN apt-get install -y supervisor
 
 
-# install hadoop 3.3.6
+# install hadoop 3.4.0
 RUN wget http://apache.rediris.es/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz && \
     tar -xzvf hadoop-3.4.0.tar.gz && \
     mv hadoop-3.4.0 /usr/local/hadoop && \
