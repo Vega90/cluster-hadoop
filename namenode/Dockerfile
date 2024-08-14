@@ -1,7 +1,6 @@
 # Utilizar la imagen base de Ubuntu
 FROM vega90/hadoop-base:1.0
 
-
 # Actualizar el sistema e instalar dependencias necesarias
 RUN apt-get update && apt-get install -y \
     python3-pip \
@@ -13,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Instalar Jupyter Notebook utilizando pip
 RUN pip3 install --no-cache-dir jupyter
 RUN pip3 install pandas
-RUN pip3 install avro-python3
+RUN pip3 install fastavro
 RUN pip3 install fastparquet
 
 # Exponer el puerto de Jupyter Notebook
