@@ -14,6 +14,7 @@ RUN pip3 install --no-cache-dir jupyter
 RUN pip3 install pandas
 RUN pip3 install fastavro
 RUN pip3 install fastparquet
+RUN pip3 install pyarrow
 
 # Exponer el puerto de Jupyter Notebook
 EXPOSE 8888
