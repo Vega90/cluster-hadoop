@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Instalar Jupyter Notebook utilizando pip
+# Instalar Jupyter Notebook utilizando pip y algunas librerias
 RUN pip3 install --no-cache-dir jupyter
 RUN pip3 install pandas
 RUN pip3 install fastavro
