@@ -15,6 +15,7 @@ RUN pip3 install pandas
 RUN pip3 install fastavro
 RUN pip3 install fastparquet
 RUN pip3 install pyarrow
+RUN pip3 install psutil
 
 # Exponer el puerto de Jupyter Notebook
 EXPOSE 8888
