@@ -2,7 +2,7 @@
 
 En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran copiando la configuración de **datanode2**. Ahora mismo hay cuatro nodos en el fichero docker-compose.yaml. Puedes añadir o eliminar nodos dejando siempre al menos uno. No olvides modificar los nombres y añadir direcciones IP válidas en caso de que escales el clúster.
 
-Las imágenes están en el repositorio Docker Hub:  [http://localhost:8888/tree](https://hub.docker.com/repositories/vega90)
+Las imágenes están en el repositorio Docker Hub:  [https://hub.docker.com/repositories/vega90](https://hub.docker.com/repositories/vega90)
 
 Versiones del clúster:
 
