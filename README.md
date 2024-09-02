@@ -18,7 +18,9 @@ Versiones del clúster:
    ```
    docker-compose up -d
    ```
-2. Realiza el mapeo de direcciones en tu fichero hosts, en linux /etc/hosts, añade las líneas:
+   Con este comando se descargarán las imágenes y comenzará el despliegue del entorno.
+   
+3. Realiza el mapeo de direcciones en tu fichero hosts, en linux /etc/hosts, añade las líneas:
     ```
    # Mapeo IP - Contenedores Docker
    172.18.0.2       namenode
@@ -28,8 +30,9 @@ Versiones del clúster:
    172.18.0.6       datanode3
    172.18.0.7       datanode4
    ```
+   Al incorporar estas direcciones, puedes acceder a los contenedores por su nombre: namenode, datanode1, yarnmanager, etc.
    
-3. URL de interés
+4. URL de interés
    *   Iniciar Jupyter Notebook: [http://localhost:8888/tree](http://localhost:8888/tree) o  [http://namenode:8888/tree](http://namenode:8888/tree)
    *   Interfaz Hadoop Namenode: [http://localhost:9870/](http://localhost:9870/) o [http://namenode:9870/](http://namenode:9870/)
    *   Job History MapReduce: [http://localhost:19888/jobhistory](http://localhost:19888/jobhistory) o [http://yarnmanager:19888/jobhistory](http://yarnmanager:19888/jobhistory)
