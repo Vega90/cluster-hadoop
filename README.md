@@ -1,4 +1,15 @@
-# Cluster de Hadoop con Docker
+# **PFG 2023-2024**
+
+Este repositorio ha sido desarrollado para la realización del Proyecto Fin de Grado 2023-2024 de Ingeniería Informática en la UNED.
+
+*   Departamento: **Sistemas de Comunicación y Control**
+*   Grado: **Ingeniería Informática**
+*   Estudiante: **Ana Isabel Candón Paños**
+*   Director: **Agustín C. Caminero Herráez** -> [http://github.com/accaminero](https://github.com/accaminero)
+*   Título: *Virtualización ligera y cloud computing para el despliegue de infraestructuras Big Data
+para la docencia online de ingeniería*
+
+## Cluster de Hadoop con Docker
 
 En el fichero docker-compose.yaml se pueden configurar tantos nodos se quieran copiando la configuración de **datanode2**. Ahora mismo hay cuatro nodos en el fichero docker-compose.yaml. Puedes añadir o eliminar nodos dejando siempre al menos uno. No olvides modificar los nombres y añadir direcciones IP válidas en caso de que escales el clúster.
 
@@ -11,6 +22,8 @@ Versiones del clúster:
 *   Hive 4.0.0
 *   Flume 1.11.0
 *   Jupyter Notebook 7.2.1
+
+
 
 ### **INSTRUCCIONES**
 
