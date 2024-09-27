@@ -5,7 +5,7 @@ Este repositorio ha sido desarrollado para la realización del Proyecto Fin de G
 *   Departamento: **Sistemas de Comunicación y Control**
 *   Grado: **Ingeniería Informática**
 *   Estudiante: **Ana Isabel Candón Paños**
-*   Director: **Agustín C. Caminero Herráez** -> [http://github.com/accaminero](https://github.com/accaminero)
+*   Director: **Agustín C. Caminero Herráez** accaminero@scc.uned.es -> [http://github.com/accaminero](https://github.com/accaminero) 
 *   Título: *Virtualización ligera y cloud computing para el despliegue de infraestructuras Big Data
 para la docencia online de ingeniería*
 
